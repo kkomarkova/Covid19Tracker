@@ -51,15 +51,16 @@ public class MainActivity extends AppCompatActivity {
     //Get the data from 3rd party services
     private void fetchdata()
     {
-        String url = "https:// corona.lmao.ninja/v2/all";
+        //Refer to url of 3rd party services JSON data
+        String url = "https://corona.lmao.ninja/v2/all";
 
         StringRequest request
                 = new StringRequest(
                 Request.Method.GET,
                 url,
-                new Response.Listener() {
+                new Response.Listener<String>() {
                     @Override
-                    public void onResponse(Object response)
+                    public void onResponse( String response)
                     {
         // Handle the JSON object and handle it inside try and catch
 

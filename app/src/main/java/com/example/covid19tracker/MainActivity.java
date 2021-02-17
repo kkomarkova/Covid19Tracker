@@ -2,7 +2,10 @@ package com.example.covid19tracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -109,5 +112,12 @@ public class MainActivity extends AppCompatActivity {
         RequestQueue requestQueue
                 = Volley.newRequestQueue(this);
         requestQueue.add(request);
+    }
+
+    public void chip4Button(View view) {
+        Intent intent =  new Intent(MainActivity.this, CountryDetailsActivity.class);
+        Button button = findViewById(R.id.chip4);
+        finish();
+        startActivity(intent);
     }
 }

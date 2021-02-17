@@ -14,6 +14,7 @@
         android:orientation="vertical">
 
         <!--Text view to display Global stats-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,11 +25,21 @@
             android:textSize="35sp"
             android:textStyle="bold"/>
 
+
         <!--Text view to display Total Cases-->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="chip4Button"
+            android:text="See all country"
+            android:textAlignment="center"
+            android:fontFamily="@font/inconsolatafont"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="@font/inconsolatafont"
             android:layout_marginTop="20dp"
             android:text="Total Cases"
             android:textAlignment="center"
@@ -106,6 +117,7 @@
 
         <!--Text view to display the updated number when data
          will fetch from the API. For now default set to 0 -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -164,6 +176,7 @@
             android:fontFamily="sans-serif-light" />
 
         <!--Text view to display Today Deaths-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
